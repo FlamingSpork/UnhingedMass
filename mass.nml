@@ -1,0 +1,171 @@
+grf {
+	grfid:	"FS\00\01";
+	name:	string(STR_GRF_NAME);
+	desc:	string(STR_GRF_DESCRIPTION);
+	version:	1;
+	min_compatible_version:	0;
+}
+
+town_names(middle) {
+    {
+        text("port", 1),
+        text("cester", 1),
+        text("vers", 1),
+        text("ham", 1),
+        text("tree", 1),
+        text("ton", 1),
+        text("burg", 1),
+        text("minster", 1),
+        text("borough", 1),
+        text("field", 1),
+        text("haven", 1),
+        text("hampton", 1),
+        text("boro", 1),
+        text("land", 1),
+        text("cord", 1),
+        text("mouth", 1),
+        text("wich", 1),
+        text("lington", 1),
+        text("stable", 1),
+        text("gus", 1),
+        text("den", 1),
+        text("anon", 1),
+        text("ell", 1),
+        text("bury", 1),
+        text("bridge", 1),
+        text("town", 1)
+    }
+}
+
+town_names(preprefixes) {
+    {
+        text("North ", 1),
+        text("South ", 1),
+        text("East ", 1),
+        text("West ", 1),
+        text("New ", 1),
+        text("Old ", 1)
+    }
+}
+
+town_names(prefixes) {
+    {
+        text("Leb", 1),
+        text("Bow", 1),
+        text("Sau", 1),
+        text("Con", 1),
+        text("Mil", 1),
+        text("Barn", 1),
+        text("Sand", 1),
+        text("Mal", 1),
+        text("Ips", 1),
+        text("Fal", 1),
+        text("Crans", 1),
+        text("Lexing", 1),
+        text("Arling", 1),
+        text("Tewks", 1),
+        text("Fox", 1),
+        text("Bos", 1),
+        text("Bed", 1),
+        text("Rock", 1),
+        text("Fitch", 1),
+        text("Glou", 1),
+        text("Mans", 1),
+        text("Leo", 1),
+        text("Wor", 1),
+        text("North", 1),
+        text("East", 1),
+        text("West", 1),
+        text("Middle", 1),
+        text("South", 1),
+        text("Bur", 1),
+        text("Low", 1),
+        text("Framing", 1),
+        text("Ash", 1),
+        text("Shrews", 1)
+    }
+}
+
+town_names(suffixes) {
+    {
+        text(" Bluffs", 1),
+        text(" River", 1),
+        text(" Shores", 1),
+        text("-by-the-Sea", 1)
+    }
+}
+
+town_names(middle2) {
+    {
+        town_names(middle, 1)
+    }
+    {
+        town_names(middle, 1)
+    }
+}
+
+town_names(middle3) {
+    {
+        town_names(middle2, 1)
+    }
+    {
+        town_names(middle, 1)
+    }
+}
+
+town_names(middles) {
+    {
+        town_names(middle, 4),
+        town_names(middle2, 2),
+        town_names(middle3, 1)
+    }
+}
+
+town_names(fullname) {
+    {
+        town_names(prefixes, 1)
+    }
+    {
+        town_names(middles, 1)
+    }
+}
+
+town_names(preprefixvariant) {
+    {
+        town_names(preprefixes, 1)
+    }
+    {
+        town_names(fullname, 1)
+    }
+}
+
+town_names(suffixvariant) {
+    {
+        town_names(fullname, 1)
+    }
+    {
+        town_names(suffixes, 1)
+    }
+}
+
+town_names(allvariant) {
+    {
+        town_names(preprefixes, 1)
+    }
+    {
+        town_names(fullname, 1)
+    }
+    {
+        town_names(suffixes, 1)
+    }
+}
+
+town_names(newengland) {
+	styles: string(STR_SET_NAME);
+    {
+        town_names(fullname, 6),
+        town_names(preprefixvariant, 2),
+        town_names(suffixvariant, 2),
+        town_names(allvariant, 1)
+    }
+}
