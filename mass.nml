@@ -37,6 +37,68 @@ town_names(middle) {
     }
 }
 
+town_names(middletwo) {
+    {
+        text("port", 1),
+        text("cester", 1),
+        text("vers", 1),
+        text("ham", 1),
+        text("tree", 1),
+        text("ton", 1),
+        text("burg", 1),
+        text("minster", 1),
+        text("borough", 1),
+        text("field", 1),
+        text("haven", 1),
+        text("hampton", 1),
+        text("boro", 1),
+        text("land", 1),
+        text("cord", 1),
+        text("mouth", 1),
+        text("wich", 1),
+        text("lington", 1),
+        text("stable", 1),
+        text("gus", 1),
+        text("den", 1),
+        text("anon", 1),
+        text("ell", 1),
+        text("bury", 1),
+        text("bridge", 1),
+        text("town", 1)
+    }
+}
+
+town_names(middlethree) {
+    {
+        text("port", 1),
+        text("cester", 1),
+        text("vers", 1),
+        text("ham", 1),
+        text("tree", 1),
+        text("ton", 1),
+        text("burg", 1),
+        text("minster", 1),
+        text("borough", 1),
+        text("field", 1),
+        text("haven", 1),
+        text("hampton", 1),
+        text("boro", 1),
+        text("land", 1),
+        text("cord", 1),
+        text("mouth", 1),
+        text("wich", 1),
+        text("lington", 1),
+        text("stable", 1),
+        text("gus", 1),
+        text("den", 1),
+        text("anon", 1),
+        text("ell", 1),
+        text("bury", 1),
+        text("bridge", 1),
+        text("town", 1)
+    }
+}
+
 town_names(preprefixes) {
     {
         text("North ", 1),
@@ -100,7 +162,7 @@ town_names(middle2) {
         town_names(middle, 1)
     }
     {
-        town_names(middle, 1)
+        town_names(middletwo, 1)
     }
 }
 
@@ -109,7 +171,7 @@ town_names(middle3) {
         town_names(middle2, 1)
     }
     {
-        town_names(middle, 1)
+        town_names(middlethree, 1)
     }
 }
 
