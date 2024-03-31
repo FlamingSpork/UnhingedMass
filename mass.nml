@@ -22,7 +22,7 @@ town_names(middle) {
         text("hampton", 1),
         text("boro", 1),
         text("land", 1),
-        text("cord", 1),
+        text("cord", 2),
         text("mouth", 1),
         text("wich", 1),
         text("lington", 1),
@@ -43,7 +43,7 @@ town_names(middletwo) {
         text("cester", 1),
         text("vers", 1),
         text("ham", 1),
-        text("tree", 1),
+        text("tree", 2),
         text("ton", 1),
         text("burg", 1),
         text("minster", 1),
@@ -76,7 +76,7 @@ town_names(middlethree) {
         text("ham", 1),
         text("tree", 1),
         text("ton", 1),
-        text("burg", 1),
+        text("burg", 2),
         text("minster", 1),
         text("borough", 1),
         text("field", 1),
@@ -168,7 +168,10 @@ town_names(middle2) {
 
 town_names(middle3) {
     {
-        town_names(middle2, 1)
+        town_names(middle, 1)
+    }
+    {
+        town_names(middletwo, 1)
     }
     {
         town_names(middlethree, 1)
